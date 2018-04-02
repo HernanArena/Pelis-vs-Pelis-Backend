@@ -27,4 +27,4 @@ RUN npm install
 COPY [".", "/src"]
 
 # Ejecuta la aplicación con el parámetro
-CMD ["node", "/src/servidor/servidor.js"]
+CMD ["node", "/src/serves.js"]
