@@ -1,0 +1,10 @@
+FROM mysql>5.7.15
+
+MAINTAINER Hernán Arena
+
+ENV DB_DATABASE = competencias \
+    DB_PASS = pegasus8039
+
+ADD schema.sql /doocker-entrypoint-initdb.d
+
+EXPOSE 3306
