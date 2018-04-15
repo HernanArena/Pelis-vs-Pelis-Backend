@@ -16,12 +16,6 @@ ADD package.json /src/package.json
 # Elige el directorio de trabajo
 WORKDIR /src
 
-<<<<<<< HEAD:Dockerfile
-=======
-# definimos el puerto 8080
-EXPOSE 8080
-
->>>>>>> origin/master:Dockerfile
 # Instala dependencias
 RUN npm install
 
@@ -30,8 +24,4 @@ RUN npm install
 COPY [".", "/src"]
 
 # Ejecuta la aplicación con el parámetro
-<<<<<<< HEAD:Dockerfile
-CMD ["node", "/src/servidor.js"]
-=======
 CMD ["node", "/src/servidor/servidor.js"]
->>>>>>> origin/master:Dockerfile
