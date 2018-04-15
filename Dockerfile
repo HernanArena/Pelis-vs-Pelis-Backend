@@ -1,7 +1,7 @@
 # Elige la imagen de Ubuntu
 FROM ubuntu:trusty
 
-# Autora
+# Autor
 MAINTAINER Hernan Arena
 
 # Instalar Node.js y algunas dependencias
@@ -16,9 +16,6 @@ ADD package.json /src/package.json
 # Elige el directorio de trabajo
 WORKDIR /src
 
-# Expone el puerto 8080
-EXPOSE 8080
-
 # Instala dependencias
 RUN npm install
 
@@ -27,4 +24,4 @@ RUN npm install
 COPY [".", "/src"]
 
 # Ejecuta la aplicación con el parámetro
-CMD ["node", "/src/serves.js"]
+CMD ["node", "/src/servidor.js"]
