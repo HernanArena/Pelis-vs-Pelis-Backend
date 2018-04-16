@@ -2,8 +2,8 @@ FROM mysql:5.7.15
 
 MAINTAINER Hernán Arena
 
-ENV MYSQL_DATABASE = competencias \
-    MYSQL_ROOT_PASSWORD = pegasus8039
+ENV MYSQL_DATABASE=competencias \
+    MYSQL_ROOT_PASSWORD=pegasus8039
 
 ADD schema.sql /doocker-entrypoint-initdb.d
 
