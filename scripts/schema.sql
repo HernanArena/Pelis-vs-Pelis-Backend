@@ -1,9 +1,7 @@
-DROP DATABASE IF EXISTS `competencias`;
-CREATE DATABASE `competencias`;
+CREATE DATABASE IF NOT EXISTS `competencias`;
 USE `competencias`;
 
 DROP TABLE IF EXISTS `actor`;
-
 CREATE TABLE `actor` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `nombre` varchar(70) NOT NULL DEFAULT '',
