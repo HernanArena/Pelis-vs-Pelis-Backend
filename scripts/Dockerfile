@@ -5,6 +5,6 @@ MAINTAINER Hernán Arena
 ENV MYSQL_DATABASE=competencias \
     MYSQL_ROOT_PASSWORD=pegasus8039
 
-ADD scripts/schema.sql /doocker-entrypoint-initdb.d
+ADD schema.sql /doocker-entrypoint-initdb.d
 
 EXPOSE 3306
