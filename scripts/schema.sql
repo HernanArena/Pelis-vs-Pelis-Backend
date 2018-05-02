@@ -105,7 +105,7 @@ CREATE TABLE `competencia` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 LOCK TABLES `competencia` WRITE;
-INSERT INTO `competencia` VALUES (1,'¿Cuál es la mejor comedia?',5,null,null),(2,'¿Cuál es el peor drama?',8,null,null),(3,'¿Cuál es la mejor peli con Sandra Bullock?',null,null,1778),(4,'¿Cuál es la mejor peli de Steven Spielberg?',null,3364,null),(5,'¿Cuál es la mejor peli con Di Caprio?',null,null,1203),(6,'¿Cuál es la peli de terror que más te asustó?',10,null,null);
+INSERT INTO `competencia` VALUES (1,'¿Cual es la mejor comedia?',5,null,null),(2,'¿Cual es el peor drama?',8,null,null),(3,'¿Cual es la mejor peli con Sandra Bullock?',null,null,1778),(4,'¿Cual es la mejor peli de Steven Spielberg?',null,3364,null),(5,'¿Cual es la mejor peli con Di Caprio?',null,null,1203),(6,'¿Cual es la peli de terror que más te asusta?',10,null,null);
 UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `competencia_voto`;

@@ -1,3 +1,4 @@
+require('dotenv').config();
 var mysql = require('mysql');
 
 console.log("Host: "+ process.env.DB_HOST+
